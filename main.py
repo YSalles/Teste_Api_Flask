@@ -3,6 +3,18 @@ from db import get_db
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def show():
+    # conn = get_db()
+    # cursor = conn.cursor()
+    # cursor.execute("SELECT * FROM pessoas")
+    # records = cursor.fetchall()
+    # cursor.close()
+    # return jsonify(records)
+    resultado = 'Show, experimente o metodo /pessoas e as /pessoas/id :)'
+    return resultado
+
+
 # GET (BUSCAR TODOS OS REGISTROS) 
 @app.route('/pessoas', methods=['GET'])
 def todos():
