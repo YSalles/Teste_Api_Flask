@@ -13,6 +13,7 @@ def todos():
     cursor.close()
     return jsonify(records)
 #teste de alteração
+#teste de alteração no vs code
 
 # GET  (BUSCAR POR UM ID ESPECÍFICO)
 @app.route('/pessoas/<int:id_registro>', methods=['GET'])
